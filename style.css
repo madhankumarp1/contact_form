@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contact-box {
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    /* box-shadow: 20px 14px 7px 0 rgb(0, 0, 0); */
+}
+
+h2 {
+    margin: 0;
+    color: white;
+
+
+}
+
+.contact-links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 52, 110);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+img {
+    width: 100%;
+    filter: hue-rotate(220deg);
+
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0;
+    gap: 3%;
+    justify-content: center;
+
+}
+
+.link {
+    margin: 0;
+    width: 10%;
+    height: 100%;
+}
+
+button {
+    background-color: rgb(7, 60, 121);
+    border: 0;
+    padding: 5%;
+    border-radius: 5px;
+    color: white;
+    width: 40%;
+
+
+}
+
+
+.contact-form-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.modal-content {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* padding: 50px 0px;
+    height: 100px;
+    height: 100px; */
+
+        margin-top: 134px;
+        padding: 45px;
+        width: 500px;
+        height: 259px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+    }
+
+/* form {
+    position: fixed;
+    top: 158px;
+    background-color: burlywood ;   
+} */
+input, textarea {
+    width: 100%;
+    padding: 0px 116px;
+    height: 50px;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    /* box-sizing: inherit; */
+    text-align: justify;
+    transition: 0.2s;
+    font-weight: bolder;
+    display: flex;
+}
+label{
+    font-size:medium;
+    font-weight: bolder;
+    color: black;
+}
+.form-item{
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    left: 50PX;
+}
+.form-item label{
+    position: absolute;
+    top:5px;
+    left: 15px;
+    z-index: 1;
+}
+input:focus + label {
+    top: -15px;
+}
+textarea:focus + label{
+    top:-15px
+}
+span.close {
+    float: right;
+    /* top: 0px;
+    display: flex;
+    bottom: 27px; */
+    display: grid;
+    margin: -50px -28px 8px 24px;
+}
+/* input:focus{
+    margin-top: 20px;
+
+}
+textarea :focus{
+    margin-top: 20px;
+} */
+/* .form-item .inputbox input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+} */
+
+
+#myModal {
+    /* top: 158px; */
+    /* display: none; */
+    background-color: rgba(3, 3, 3, 0.637);
+    /* width: 45%;
+    height: 77%;
+    padding: 0px 0px;
+    /* left: 122px; */
+    /* border: au;
+    margin: auto; */ 
+    /* transition: opicty; */
+}  
+@media screen and (max-width:700px){
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .contact-links {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+        background-color: rgb(0, 52, 110);
+    }
+
+    .contact-box {
+        width: 50%;
+        height: 60%;
+        background-color: white;
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        /* border-radius: 5%; */
+        box-shadow: 20px 14px 7px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightskyblue;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 12px;
+    }
+    button {
+        background-color: rgb(7, 60, 121);
+        border: 0;
+        padding: 5%;
+        border-radius: 5px;
+        color: white;
+        width: 40%;
+        transition: 0.1s;
+    }
+    /* form {
+        position: fixed;
+        top: 125px;
+        height: 80%;
+        width: 45%;
+        background-color: burlywood ;
+    } */
+
+    #myModal {
+        /* top: 158px; */
+        /* display: none; */
+        background-color: rgba(3, 3, 3, 0.445);
+        /* width: 45%;
+        height: 77%;
+        padding: 0px 0px;
+        /* left: 122px; */
+        /* border: au;
+        margin: auto; */ 
+        /* transition: opicty; */
+    }   
+    .modal-content {
+        margin-top: 128px;
+        width: 233px;
+        height: 207px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(255, 210, 210);
+        border-radius: 10px;
+    }
+    input, textarea {
+        width: 100%;
+        /* padding: 0px 116px; */
+        /* height: 75px; */
+        display: flex;
+        margin: 17px 0px;
+        box-sizing: border-box;
+        /* transition: 0.2s; */
+    }
+    label{
+        font-size:small;
+        font-weight: bolder;
+        color: black;
+    }
+    .form-item {
+        width:inherit;
+        position: relative;
+        text-align: center;
+         left: 0px;
+        }
+    .label form-item{
+        position: absolute;
+        /* top:4px;
+        left: 15px; */
+        z-index: 1;
+    }
+    /* .label:focus+.label,textarea:focus+label{
+        margin-top: -8px;
+    
+    /* } */
+    /* input:focus{
+        margin-top: 20px;
+    }
+    textarea:focus{
+        margin-top: 20px;
+    } */
+    /* textarea:focus{
+        margin-top: 20px;
+    } */
+    input:focus + label {
+        top: -17px;
+    }
+    textarea:focus + label{
+        top:-17px
+    }
+}
